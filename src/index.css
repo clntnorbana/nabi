@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.98)),
+    url("./assets/bhea.png");
+  transition: background-image 0.5s ease; /* Add transition */
+}
+
+.bg-img.active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./assets/bhea.png");
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#play-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.text-paruparo {
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Butterfly Kids", cursive;
+}
+
+.block-enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.butterfly-btn {
+  height: 5rem;
+  width: auto;
+  cursor: pointer;
+  filter: invert(64%) sepia(40%) saturate(250%) hue-rotate(10deg)
+    brightness(95%) contrast(90%) drop-shadow(0 0 10px rgba(255, 165, 0, 0.7));
+}
+
+.text-enter {
+  text-align: center;
+  font-family: "Butterfly Kids", cursive;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.text-developed-by {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.img-container {
+  width: 150px;
+  height: auto;
+  opacity: 0.2;
+  border: #fff 2px solid;
+  margin: 25px;
+}
+
+.img {
+  width: 100%;
+}
+
+.img-grp-1 {
+  position: absolute;
+  left: 3%;
+  top: 15%;
+}
+
+.img-grp-1 .img-container:nth-child(1) {
+  margin-left: 40px;
+}
+
+.img-grp-1 .img-container:nth-child(3) {
+  margin-left: 80px;
+}
+
+.img-grp-2 {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+}
+
+.img-grp-2 .img-container:nth-child(2) {
+  margin-left: 40px;
+}
