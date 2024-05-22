@@ -84,6 +84,7 @@
   opacity: 0.2;
   border: #fff 2px solid;
   margin: 25px;
+  transition: opacity 0.5s ease;
 }
 
 .img {
